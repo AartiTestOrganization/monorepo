@@ -12,9 +12,10 @@ jobs:
       - name: SonarCloud Analysis
         uses: sonarsource/sonarcloud-github-action@v1.8
         with:
+          projectBaseDir: LambdaF2
           args: >
-            -Dsonar.organization=cyabge-koredevdata
-            -Dsonar.projectKey=cyabge-koredevdata_pythonmonorepolambdafunction
+            -Dsonar.organization=aartitestorganization
+            -Dsonar.projectKey=aartitestorganization_monorepo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
