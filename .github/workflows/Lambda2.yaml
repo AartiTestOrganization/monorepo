@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "LambdaF2/**"
+      - ".github/workflows/Lambda2.yaml"
 
 jobs:
   sonarcloud:
